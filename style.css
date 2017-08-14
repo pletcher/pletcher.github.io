@@ -21,6 +21,7 @@ p {
 }
 
 ul {
+  list-style: lower-greek outside none;
 	margin-bottom: 0;
 }
 
