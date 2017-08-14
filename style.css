@@ -1,5 +1,5 @@
 body {
-  background: rgb(251, 251, 251);
+  background: rgb(252, 252, 254);
   color: #454545;
 	font: 15px system, -apple-system, Helvetica, sans-serif;
 	line-height: 1.4;
@@ -21,8 +21,21 @@ p {
 }
 
 ul {
-  list-style: lower-greek outside none;
-	margin-bottom: 0;
+  counter-reset: c;
+  display: table;
+  list-style: lower-greek inside none;
+	padding: 0;
+}
+
+li {
+  counter-increment: c;
+  display: table-row;
+}
+
+li::before {
+  content: counter(c, lower-greek) ".";
+  display: table-cell;
+  padding-right: 1em;
 }
 
 section {
