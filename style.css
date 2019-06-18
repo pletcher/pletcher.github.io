@@ -17,9 +17,36 @@ a {
 	font-weight: 600;
 }
 
+footer {
+  font-weight: 300;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 480px;
+  text-align: center;
+}
+
 img {
   border-radius: 2px;
   box-shadow: -2px 2px 8px lightgray;
+}
+
+nav {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li::before {
+  content: "";
+  display: inline;
 }
 
 p {
@@ -48,6 +75,10 @@ section {
 	margin-bottom: 2rem;
 }
 
+section article p {
+  margin: 0;
+}
+
 .item {
 	margin-bottom: 1rem;
 }
@@ -67,17 +98,4 @@ section {
 	float: left;
 	line-height: 1.4;
 	width: 120px;
-}
-
-section article p {
-	margin: 0;
-}
-
-#profiles, #skills {
-	overflow: hidden;
-}
-
-#profiles .item, #skills .item, #languages .item {
-	float: left;
-	width: 50%;
 }
