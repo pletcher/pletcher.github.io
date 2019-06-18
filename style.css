@@ -17,6 +17,11 @@ a {
 	font-weight: 600;
 }
 
+img {
+  border-radius: 2px;
+  box-shadow: -2px 2px 8px lightgray;
+}
+
 p {
 	line-height: 1.4;
 }
