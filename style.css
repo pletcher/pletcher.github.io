@@ -100,9 +100,9 @@ section article p {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 480px) {
-  #contact a {
-    width: 100%;
+@media screen and (max-width: 600px) {
+  #contact strong {
+    display: none;
   }
 }
 
