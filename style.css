@@ -100,6 +100,12 @@ section article p {
   justify-content: space-between;
 }
 
+#cv p {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+
 @media screen and (max-width: 600px) {
   #contact strong {
     display: none;
